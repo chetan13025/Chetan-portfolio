@@ -1,82 +1,155 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Chetan Patil — QA Automation Engineer with 4+ years of experience in web, mobile, API and database testing.">
-<title>Chetan Patil | QA Automation Engineer</title>
-<style>
-:root{--bg:#f5f7fc;--surface:#fff;--ink:#182238;--muted:#65728a;--line:#e3e9f3;--blue:#315efb;--blue-soft:#edf1ff;--navy:#101a35;--green:#14856b}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);line-height:1.65}a{color:inherit;text-decoration:none}.wrap{width:min(1100px,calc(100% - 40px));margin:auto}
-header{position:sticky;top:0;z-index:5;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-weight:850;letter-spacing:-.04em;font-size:1.1rem}.brand span{color:var(--blue)}.navlinks{display:flex;gap:23px;color:var(--muted);font-size:.91rem}.navlinks a:hover{color:var(--blue)}.menu{display:none;border:1px solid var(--line);background:white;border-radius:9px;padding:8px 12px}
-.hero{padding:88px 0 72px;background:radial-gradient(circle at 84% 12%,#e1e9ff 0,transparent 31%),linear-gradient(135deg,#fff,#f4f6ff)}.pill{display:inline-flex;align-items:center;gap:8px;background:var(--blue-soft);color:#244bd4;border-radius:99px;padding:6px 12px;font-size:.8rem;font-weight:750}.dot{width:8px;height:8px;border-radius:50%;background:var(--green)}h1{font-size:clamp(2.7rem,6vw,4.7rem);line-height:1.06;letter-spacing:-.06em;max-width:850px;margin:20px 0 16px}h1 span{color:var(--blue)}.lead{font-size:1.1rem;color:var(--muted);max-width:750px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:27px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:11px 17px;border:1px solid var(--line);border-radius:10px;background:white;font-weight:750;font-size:.92rem}.btn.primary{background:var(--blue);border-color:var(--blue);color:white}.btn:hover{transform:translateY(-1px)}.quick{display:flex;gap:23px;flex-wrap:wrap;margin-top:35px;color:var(--muted);font-size:.9rem}.quick strong{color:var(--ink)}
-section{padding:72px 0}.white{background:white}.kicker{color:var(--blue);font-size:.76rem;font-weight:850;letter-spacing:.13em;text-transform:uppercase}.heading{font-size:2rem;letter-spacing:-.045em;margin:5px 0 8px}.intro{color:var(--muted);max-width:760px;margin:0 0 28px}.grid{display:grid;gap:17px}.two{grid-template-columns:repeat(2,minmax(0,1fr))}.three{grid-template-columns:repeat(3,minmax(0,1fr))}.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:22px;box-shadow:0 8px 25px rgba(25,43,84,.035)}.card h3{margin:0 0 7px;font-size:1.08rem}.card p{margin:0;color:var(--muted)}.metric{font-size:2.15rem;line-height:1.15;letter-spacing:-.05em;font-weight:850;color:var(--blue)}.metric-label{font-size:.88rem;color:var(--muted);margin-top:5px}.taglist{display:flex;flex-wrap:wrap;gap:8px;margin-top:15px}.tag{padding:5px 9px;background:#f2f5fb;border:1px solid #e6ebf4;color:#43516b;border-radius:7px;font-size:.81rem;font-weight:650}.project{display:flex;flex-direction:column;min-height:100%}.project .label{font-size:.73rem;text-transform:uppercase;letter-spacing:.1em;color:var(--blue);font-weight:850}.project h3{font-size:1.15rem;margin:6px 0}.project ul{padding-left:19px;color:var(--muted);margin:12px 0 0}.project li{margin:5px 0}.company{color:var(--blue);font-weight:750;font-size:.9rem}.timeline{border-left:2px solid #dce4f5;margin-left:8px;padding-left:24px}.entry{position:relative;padding:0 0 26px}.entry:last-child{padding-bottom:0}.entry:before{content:"";position:absolute;left:-32px;top:7px;width:11px;height:11px;background:var(--blue);border:3px solid white;border-radius:50%;box-shadow:0 0 0 1px #cbd7f4}.entry h3{margin:0}.date{font-size:.86rem;color:var(--muted);font-weight:650}.entry p{margin:7px 0 0;color:var(--muted)}.cta{background:var(--navy);color:white;border-radius:20px;padding:34px;display:flex;justify-content:space-between;align-items:center;gap:20px}.cta p{color:#c5cee0;margin:5px 0 0}.cta .btn{white-space:nowrap}footer{padding:27px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.86rem}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
-@media(max-width:760px){.navlinks{display:none;position:absolute;top:72px;left:0;right:0;background:white;border-bottom:1px solid var(--line);padding:16px 22px;flex-direction:column;gap:13px}.navlinks.open{display:flex}.menu{display:block}.hero{padding:62px 0}.two,.three{grid-template-columns:1fr}section{padding:55px 0}.cta{align-items:flex-start;flex-direction:column}.wrap{width:calc(100% - 30px)}}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0b0f12">
+  <meta name="description" content="Chetan Patil is a QA Automation Engineer with 4+ years of experience in web, mobile, API and database testing.">
+  <meta property="og:title" content="Chetan Patil | QA Automation Engineer">
+  <meta property="og:description" content="Quality engineering across web, mobile, API and database layers.">
+  <title>Chetan Patil — QA Automation Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{color-scheme:dark;--bg:#0b0f12;--panel:#11181b;--panel2:#151e21;--line:#263236;--text:#edf5f1;--muted:#a0b0aa;--green:#a3f36b;--green2:#c7ff9c;--mint:#6fe0b5;--mono:"DM Mono",monospace;--sans:"Manrope",system-ui,sans-serif;--max:1160px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:88px}body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);line-height:1.7}a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(var(--max),calc(100% - 48px));margin:auto}
+    body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;background:radial-gradient(ellipse at 80% 0%,rgba(115,220,150,.09),transparent 35%),radial-gradient(ellipse at 0% 55%,rgba(80,160,130,.055),transparent 30%)}
+    .topbar{position:sticky;top:0;z-index:20;background:rgba(11,15,18,.86);backdrop-filter:blur(18px);border-bottom:1px solid rgba(163,243,107,.12)}
+    nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{font-weight:800;letter-spacing:-.06em;font-size:1.12rem}.brand b{color:var(--green)}.navlinks{display:flex;align-items:center;gap:27px;color:var(--muted);font-size:.86rem;font-weight:700}.navlinks a:hover,.navlinks a:focus-visible{color:var(--green)}.nav-cta{border:1px solid rgba(163,243,107,.45);padding:9px 14px;border-radius:8px;color:var(--green)}.menu{display:none;background:transparent;color:var(--text);border:1px solid var(--line);border-radius:8px;padding:8px 12px}
+    .hero{padding:100px 0 82px;min-height:640px;display:flex;align-items:center}.hero-grid{display:grid;grid-template-columns:1.35fr .65fr;align-items:center;gap:55px}.eyebrow,.kicker{font-family:var(--mono);text-transform:uppercase;letter-spacing:.13em;font-size:.72rem;color:var(--green)}.availability{display:inline-flex;align-items:center;gap:10px;padding:7px 12px;border:1px solid var(--line);border-radius:99px;color:#c2d0c9;font-size:.78rem}.pulse{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 0 5px rgba(163,243,107,.1)}h1{font-size:clamp(3rem,7vw,5.9rem);line-height:1.02;letter-spacing:-.075em;margin:24px 0 18px;font-weight:800}h1 span{color:var(--green)}.hero-copy{max-width:710px;color:var(--muted);font-size:1.08rem}.hero-copy strong{color:var(--text);font-weight:700}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:12px 17px;border:1px solid var(--line);border-radius:9px;font-size:.88rem;font-weight:800;transition:transform .2s,border-color .2s,background .2s}.btn:hover{transform:translateY(-2px);border-color:var(--green)}.btn.primary{background:var(--green);border-color:var(--green);color:#10170e}.btn.secondary{background:rgba(255,255,255,.025)}.hero-meta{display:flex;gap:25px;flex-wrap:wrap;margin-top:36px;color:var(--muted);font-size:.83rem}.hero-meta strong{color:var(--text)}
+    .terminal{background:linear-gradient(145deg,#151f20,#0e1416);border:1px solid #2d3c37;border-radius:16px;padding:20px;box-shadow:0 24px 80px rgba(0,0,0,.25);transform:rotate(1deg)}.terminal-head{display:flex;align-items:center;gap:7px;border-bottom:1px solid var(--line);padding-bottom:15px;margin-bottom:16px}.terminal-head i{width:8px;height:8px;border-radius:50%;background:#46534d}.terminal-head span{margin-left:auto;font: .68rem var(--mono);color:#789087}.terminal pre{margin:0;white-space:pre-wrap;font: .78rem/2 var(--mono);color:#c6d7ce}.terminal .key{color:var(--green)}.terminal .value{color:#d5e6dc}.terminal-note{font: .67rem var(--mono);color:#80948a;margin-top:18px}
+    section{padding:88px 0;border-top:1px solid rgba(255,255,255,.055)}.section-head{max-width:760px;margin-bottom:34px}.section-title{font-size:clamp(2rem,4vw,3rem);line-height:1.12;letter-spacing:-.06em;margin:10px 0 12px}.section-intro{color:var(--muted);margin:0}.about-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:18px}.panel{background:linear-gradient(145deg,rgba(20,29,31,.96),rgba(14,20,22,.96));border:1px solid var(--line);border-radius:14px;padding:25px}.panel p{color:var(--muted);margin:0}.panel p+p{margin-top:13px}.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.stat{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:19px}.stat strong{display:block;font-size:2rem;line-height:1.2;letter-spacing:-.06em;color:var(--green)}.stat span{display:block;color:var(--muted);font-size:.78rem;margin-top:6px}
+    .skill-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.skill-card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:21px}.skill-card h3{margin:0 0 13px;font-size:.98rem}.chips{display:flex;flex-wrap:wrap;gap:8px}.chip{font: .72rem var(--mono);padding:6px 9px;border:1px solid #30413a;border-radius:6px;color:#c1d1c8;background:rgba(163,243,107,.035)}
+    .timeline{border-left:1px solid #40554a;margin-left:8px;padding-left:28px}.role{position:relative;padding:0 0 34px}.role:last-child{padding-bottom:0}.role:before{content:"";position:absolute;left:-34px;top:8px;width:9px;height:9px;background:var(--green);border-radius:50%;box-shadow:0 0 0 5px rgba(163,243,107,.1)}.role-top{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.role h3{margin:0;font-size:1.12rem}.role-date{font: .72rem var(--mono);color:var(--green)}.role-company{color:var(--muted);font-size:.88rem;margin-top:3px}.role ul{color:var(--muted);padding-left:19px;margin:12px 0 0}.role li{margin:6px 0}
+    .projects{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}.project{display:flex;flex-direction:column;background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:23px;min-height:270px;transition:transform .2s,border-color .2s}.project:hover{transform:translateY(-3px);border-color:#607d69}.project-top{display:flex;align-items:center;justify-content:space-between;gap:10px}.project-type{font: .68rem var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--green)}.project-icon{width:35px;height:35px;display:grid;place-items:center;border:1px solid var(--line);border-radius:9px;color:var(--green);font: .85rem var(--mono)}.project h3{font-size:1.16rem;margin:15px 0 7px;letter-spacing:-.03em}.project p{color:var(--muted);font-size:.88rem;margin:0}.project ul{color:var(--muted);font-size:.82rem;padding-left:18px;margin:13px 0 18px}.project li{margin:5px 0}.project .chips{margin-top:auto}
+    .architecture{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:center}.arch-copy p{color:var(--muted)}.arch-flow{display:grid;gap:9px}.arch-box{border:1px solid #34463c;background:var(--panel);border-radius:9px;padding:12px 15px;text-align:center;font-size:.82rem;font-weight:750}.arch-box.highlight{border-color:rgba(163,243,107,.55);color:var(--green);background:rgba(163,243,107,.055)}.arch-arrow{text-align:center;color:var(--green);font: .8rem var(--mono)}
+    .education-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}.edu h3{margin:7px 0}.edu p{color:var(--muted);margin:0;font-size:.88rem}
+    .contact-box{display:flex;justify-content:space-between;align-items:center;gap:25px;padding:34px;border:1px solid #3a4e40;border-radius:16px;background:radial-gradient(ellipse at 90% 10%,rgba(163,243,107,.1),transparent 40%),var(--panel)}.contact-box h2{font-size:clamp(1.8rem,4vw,2.7rem);letter-spacing:-.06em;margin:8px 0}.contact-box p{color:var(--muted);margin:0}.contact-links{display:flex;gap:10px;flex-wrap:wrap}.contact-email{color:var(--green);font-family:var(--mono);font-size:.84rem;margin-top:14px!important}
+    footer{padding:27px 0;color:#82938a;font-size:.78rem;border-top:1px solid var(--line)}.footer-row{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.footer-row a:hover{color:var(--green)}
+    .reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}.reveal.visible{opacity:1;transform:none}
+    @media(max-width:850px){.hero-grid,.about-grid,.architecture{grid-template-columns:1fr}.terminal{max-width:520px;transform:none}.skill-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:620px){.wrap{width:calc(100% - 32px)}nav{height:66px}.menu{display:block}.navlinks{display:none;position:absolute;top:66px;left:0;right:0;padding:18px 22px;background:#101719;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start;gap:15px}.navlinks.open{display:flex}.nav-cta{display:none}.hero{padding:70px 0 58px;min-height:0}.hero-grid{gap:35px}h1{font-size:clamp(2.8rem,14vw,4.3rem)}section{padding:65px 0}.skill-grid,.projects,.education-grid{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}.contact-box{align-items:flex-start;flex-direction:column;padding:25px}.hero-meta{gap:12px 20px}}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}.reveal{opacity:1;transform:none}}
+  </style>
 </head>
 <body>
-<header><div class="wrap"><nav>
-<a class="brand" href="#home">CHETAN<span>.</span></a>
-<div class="navlinks" id="navlinks"><a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div>
-<button class="menu" id="menu" aria-label="Toggle navigation">Menu</button>
+<header class="topbar"><div class="wrap"><nav aria-label="Main navigation">
+  <a class="brand" href="#home" aria-label="Chetan Patil home">CHETAN<b>.</b></a>
+  <button class="menu" id="menu" aria-expanded="false" aria-controls="navlinks">Menu</button>
+  <div class="navlinks" id="navlinks">
+    <a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#architecture">Framework</a><a class="nav-cta" href="#contact">Let's connect ↗</a>
+  </div>
 </nav></div></header>
 <main>
-<section class="hero" id="home"><div class="wrap">
-<div class="pill"><span class="dot"></span> QA Automation Engineer · 4+ years</div>
-<h1>Hi, I'm Chetan Patil.<br><span>I build quality into every release.</span></h1>
-<p class="lead">QA Engineer | Software Automation Engineer | Test Automation Specialist. I work across web, mobile, API and database testing, building reliable automation and helping teams deliver dependable software.</p>
-<div class="actions"><a class="btn primary" href="#projects">Explore my work →</a><a class="btn" href="Chetan_Patil_QA_Automation_Engineer_Resume.pdf" download>↓ Download Resume</a><a class="btn" href="mailto:patilchetan256@gmail.com">Contact me</a></div>
-<div class="quick"><span><strong>4+ years</strong> experience</span><span><strong>Web · Mobile · API</strong> testing</span><span><strong>Java-based</strong> automation</span></div>
-</div></section>
-
-<section id="about"><div class="wrap"><div class="kicker">About me</div><h2 class="heading">A quality-first automation engineer.</h2><p class="intro">QA Automation Engineer with 4+ years in web, mobile, API and database testing. Built a Rest Assured framework with 200+ automated API tests and API-to-DB reconciliation using MySQL and MongoDB, and automated 200+ UI tests with Selenium and Appium, reducing manual effort by 70%. Experienced in Jenkins CI/CD, Agile delivery and mentoring junior engineers.</p>
-<div class="grid three">
-<div class="card"><div class="metric">200+</div><div class="metric-label">Automated API tests</div></div>
-<div class="card"><div class="metric">200+</div><div class="metric-label">Automated UI tests</div></div>
-<div class="card"><div class="metric">70%</div><div class="metric-label">Reduction in manual testing effort</div></div>
-<div class="card"><div class="metric">60%</div><div class="metric-label">Reduction in mobile execution time</div></div>
-<div class="card"><div class="metric">15+</div><div class="metric-label">APIs covered in automation framework</div></div>
-<div class="card"><div class="metric">2</div><div class="metric-label">Junior engineers mentored</div></div>
-</div></div></section>
-
-<section class="white" id="skills"><div class="wrap"><div class="kicker">Technical toolkit</div><h2 class="heading">Skills & technologies</h2><p class="intro">Tools and practices used across automation, API validation, mobile testing and quality engineering.</p>
-<div class="grid two">
-<div class="card"><h3>Automation frameworks</h3><div class="taglist"><span class="tag">Selenium WebDriver</span><span class="tag">Appium</span><span class="tag">Rest Assured</span><span class="tag">TestNG</span><span class="tag">Cucumber BDD</span><span class="tag">Page Object Model</span><span class="tag">Data-driven</span><span class="tag">Keyword-driven</span></div></div>
-<div class="card"><h3>Programming & scripting</h3><div class="taglist"><span class="tag">Core Java</span><span class="tag">OOP</span><span class="tag">Java Collections</span><span class="tag">JSON</span></div></div>
-<div class="card"><h3>API & web services</h3><div class="taglist"><span class="tag">REST API testing</span><span class="tag">Postman</span><span class="tag">Newman</span><span class="tag">API automation</span><span class="tag">API–DB reconciliation</span></div></div>
-<div class="card"><h3>Mobile & database testing</h3><div class="taglist"><span class="tag">Android automation</span><span class="tag">Cross-device testing</span><span class="tag">Parallel execution</span><span class="tag">MySQL</span><span class="tag">MS SQL</span><span class="tag">MongoDB</span><span class="tag">SQL queries</span></div></div>
-<div class="card"><h3>CI/CD & reporting</h3><div class="taglist"><span class="tag">Jenkins</span><span class="tag">Maven</span><span class="tag">Git</span><span class="tag">Extent Reports</span><span class="tag">CI/CD</span></div></div>
-<div class="card"><h3>Quality engineering</h3><div class="taglist"><span class="tag">Test strategy</span><span class="tag">Risk-based testing</span><span class="tag">Functional</span><span class="tag">Integration</span><span class="tag">Smoke</span><span class="tag">Regression</span><span class="tag">Exploratory</span><span class="tag">E2E</span><span class="tag">JIRA</span><span class="tag">Agile/Scrum</span></div></div>
-</div></div></section>
-
-<section id="experience"><div class="wrap"><div class="kicker">Career journey</div><h2 class="heading">Professional experience</h2><p class="intro">Hands-on quality ownership across enterprise collaboration, healthcare workflows, reverse supply chain, remarketing and field-team applications.</p>
-<div class="card"><div class="timeline">
-<div class="entry"><h3>QA Engineer <span class="company">· Digital Harbor, Bangalore</span></h3><div class="date">July 2025 – Present</div><p>Designed end-to-end UI, API and backend test strategies for web, desktop and mobile platforms. Worked with developers and product owners in Agile sprints to triage defects and support release sign-off.</p></div>
-<div class="entry"><h3>Software Automation Engineer <span class="company">· Blubirch, Bangalore</span></h3><div class="date">August 2022 – July 2025</div><p>Automated UI and mobile workflows using Selenium WebDriver and Appium, executed API collections with Postman and Newman, and maintained automation suites and regression pipelines.</p></div>
-</div></div></div></section>
-
-<section class="white" id="projects"><div class="wrap"><div class="kicker">Selected projects</div><h2 class="heading">Projects & contributions</h2><p class="intro">Project descriptions and achievements are based on the experience detailed in my resume.</p>
-<div class="grid two">
-<div class="card project"><div class="label">Digital Harbor · Collaboration</div><h3>Yoodle — Enterprise Collaboration Platform</h3><p>Enterprise collaboration platform covering meetings, chat and productivity across web, desktop and mobile.</p><ul><li>Designed end-to-end UI, API and backend test strategy across three platforms.</li><li>Executed functional, regression, integration, smoke and exploratory testing.</li><li>Collaborated with developers and product owners on defect triage and release sign-off.</li></ul></div>
-<div class="card project"><div class="label">Digital Harbor · Healthcare</div><h3>SET — Social Enterprise Technology Universal Platform</h3><p>Healthcare case-management and workflow-automation platform.</p><ul><li>Built a Rest Assured (Java) framework covering 15+ APIs and 200+ automated test cases.</li><li>Validated JSON responses, authentication and dynamic payloads.</li><li>Implemented API–DB reconciliation across MySQL and MongoDB; integrated 200+ Cucumber tests with Jenkins and Extent Reports.</li></ul></div>
-<div class="card project"><div class="label">Blubirch · Reverse supply chain</div><h3>RA–PaaS — Returns Automation Platform</h3><p>Reverse supply-chain platform for liquidating returned items across B2B and B2C channels.</p><ul><li>Automated 200+ UI end-to-end test cases using Selenium WebDriver and Appium.</li><li>Reduced manual testing effort by 70%.</li><li>Executed automated API collections using Postman and Newman with stakeholder reports.</li></ul></div>
-<div class="card project"><div class="label">Blubirch · Remarketing</div><h3>Remarketing — B4Traders</h3><p>Remarketing platform serving 9,000+ buyers with tracking, pricing guidance and business insights.</p><ul><li>Automated 80+ UI regression test cases with Selenium WebDriver.</li><li>Streamlined login, navigation and business workflows.</li><li>Automated data synchronization between two web applications.</li></ul></div>
-<div class="card project"><div class="label">Blubirch · Mobile automation</div><h3>FTA — Field Team Automation</h3><p>Field-team mobile app for tour planning and task execution.</p><ul><li>Automated 100+ mobile test scenarios for tour-plan creation using Appium.</li><li>Ran parallel execution across Android devices.</li><li>Reduced execution time by 60%.</li></ul></div>
-</div></div></section>
-
-<section><div class="wrap"><div class="grid two">
-<div class="card"><div class="kicker">Education</div><h3 style="margin-top:8px">Bachelor of Engineering (B.E.)</h3><p>Basaveshwar Engineering College, Bagalkot (Autonomous), Karnataka · 2020</p></div>
-<div class="card"><div class="kicker">Certification & languages</div><h3 style="margin-top:8px">Manual, Core Java & Automation Testing</h3><p>QSpiders, Bangalore</p><div class="taglist"><span class="tag">Kannada</span><span class="tag">English</span><span class="tag">Hindi</span></div></div>
-</div></div></section>
-
-<section id="contact"><div class="wrap"><div class="cta"><div><div class="kicker" style="color:#a9bcff">Get in touch</div><h2 style="margin:5px 0 0;font-size:1.8rem">Let's build quality software.</h2><p>Open to connecting about QA engineering and automation opportunities.</p><p style="margin-top:12px">patilchetan256@gmail.com · +91 8217480083</p></div><div class="actions" style="margin:0"><a class="btn primary" href="mailto:patilchetan256@gmail.com">Email me ↗</a></div></div>
-</div></section>
+  <section class="hero" id="home"><div class="wrap hero-grid">
+    <div>
+      <div class="availability"><span class="pulse"></span> QA AUTOMATION ENGINEER <span aria-hidden="true">·</span> 4+ YEARS</div>
+      <h1>Building confidence<br>into every <span>release.</span></h1>
+      <p class="hero-copy">I'm <strong>Chetan Patil</strong> — a QA Automation Engineer focused on reliable web, mobile, API and database testing. I build automation that helps teams ship with confidence, catch defects earlier and spend less time on repetitive regression.</p>
+      <div class="actions"><a class="btn primary" href="#projects">Explore my work ↘</a><a class="btn secondary" href="Chetan_Patil_QA_Automation_Engineer_Resume.pdf" download>↓ Download resume</a><a class="btn secondary" href="mailto:patilchetan256@gmail.com">Contact me ↗</a></div>
+      <div class="hero-meta"><span><strong>4+ years</strong> in QA</span><span><strong>Web · Mobile · API</strong></span><span><strong>Automation-first</strong> mindset</span></div>
+    </div>
+    <aside class="terminal" aria-label="Quality engineering focus">
+      <div class="terminal-head"><i></i><i></i><i></i><span>quality-engineering.json</span></div>
+      <pre>{
+  <span class="key">"focus"</span>: <span class="value">"Quality Engineering"</span>,
+  <span class="key">"web"</span>: <span class="value">"Selenium · Playwright"</span>,
+  <span class="key">"mobile"</span>: <span class="value">"Appium · Android"</span>,
+  <span class="key">"api"</span>: <span class="value">"Rest Assured · Postman"</span>,
+  <span class="key">"language"</span>: <span class="value">"Java · JavaScript"</span>,
+  <span class="key">"delivery"</span>: <span class="value">"Jenkins · CI/CD"</span>,
+  <span class="key">"approach"</span>: <span class="value">"Risk-based · E2E"</span>
+}</pre>
+      <div class="terminal-note">// test smart. ship confidently.</div>
+    </aside>
+  </div></section>
+  <section id="about"><div class="wrap">
+    <div class="section-head reveal"><div class="kicker">01 / ABOUT</div><h2 class="section-title">Quality is more than finding bugs.</h2><p class="section-intro">It's about building confidence in the product, the process and every release.</p></div>
+    <div class="about-grid">
+      <div class="panel reveal"><p>I'm a QA Automation Engineer with 4+ years of experience across web, mobile, API and database testing. My work spans test strategy, automation framework development, end-to-end validation, regression, defect investigation and release readiness.</p><p>I've built a Rest Assured framework with 200+ automated API tests, automated 200+ UI tests using Selenium and Appium, and contributed to reducing manual testing effort by 70%. I enjoy collaborating with developers and product teams to turn complex workflows into dependable test coverage.</p><p>My approach combines practical automation, clear reporting, thoughtful exploratory testing and a focus on business-critical user journeys.</p></div>
+      <div class="stats reveal">
+        <div class="stat"><strong>200+</strong><span>Automated API tests</span></div>
+        <div class="stat"><strong>200+</strong><span>Automated UI tests</span></div>
+        <div class="stat"><strong>70%</strong><span>Less manual testing effort</span></div>
+        <div class="stat"><strong>60%</strong><span>Mobile execution time reduction</span></div>
+      </div>
+    </div>
+  </div></section>
+  <section id="skills"><div class="wrap">
+    <div class="section-head reveal"><div class="kicker">02 / TOOLKIT</div><h2 class="section-title">Tools I work with.</h2><p class="section-intro">A practical toolkit for testing across the application stack — from browser and device to API and data layer.</p></div>
+    <div class="skill-grid">
+      <article class="skill-card reveal"><h3>Web automation</h3><div class="chips"><span class="chip">Selenium WebDriver</span><span class="chip">Playwright</span><span class="chip">JavaScript</span><span class="chip">Page Object Model</span><span class="chip">TestNG</span></div></article>
+      <article class="skill-card reveal"><h3>Mobile automation</h3><div class="chips"><span class="chip">Appium 2</span><span class="chip">Android</span><span class="chip">ADB</span><span class="chip">Parallel devices</span><span class="chip">Desired Capabilities</span></div></article>
+      <article class="skill-card reveal"><h3>API testing</h3><div class="chips"><span class="chip">Rest Assured</span><span class="chip">Postman</span><span class="chip">Newman</span><span class="chip">REST</span><span class="chip">JSON</span></div></article>
+      <article class="skill-card reveal"><h3>Programming</h3><div class="chips"><span class="chip">Core Java</span><span class="chip">OOP</span><span class="chip">JavaScript</span><span class="chip">Python</span><span class="chip">SQL</span></div></article>
+      <article class="skill-card reveal"><h3>CI/CD & reporting</h3><div class="chips"><span class="chip">Jenkins</span><span class="chip">Maven</span><span class="chip">Git</span><span class="chip">Allure</span><span class="chip">Extent Reports</span></div></article>
+      <article class="skill-card reveal"><h3>Data & quality</h3><div class="chips"><span class="chip">MySQL</span><span class="chip">MongoDB</span><span class="chip">MS SQL</span><span class="chip">Jira</span><span class="chip">Agile / Scrum</span><span class="chip">E2E testing</span></div></article>
+    </div>
+  </div></section>
+  <section id="experience"><div class="wrap">
+    <div class="section-head reveal"><div class="kicker">03 / EXPERIENCE</div><h2 class="section-title">Where I've made an impact.</h2><p class="section-intro">Working across enterprise collaboration, healthcare workflows and reverse supply-chain products.</p></div>
+    <div class="panel reveal"><div class="timeline">
+      <article class="role"><div class="role-top"><div><h3>QA Engineer</h3><div class="role-company">Digital Harbor · Bangalore</div></div><div class="role-date">JUL 2025 — PRESENT</div></div><ul><li>Design and execute end-to-end UI, API and backend validation across web, desktop and mobile experiences.</li><li>Test collaboration and healthcare workflows, including functional, integration, regression and exploratory scenarios.</li><li>Partner with developers and product owners on defect triage, root-cause investigation and release readiness.</li></ul></article>
+      <article class="role"><div class="role-top"><div><h3>Software Automation Engineer</h3><div class="role-company">Blubirch · Bangalore</div></div><div class="role-date">AUG 2022 — JUL 2025</div></div><ul><li>Built and maintained Selenium Java and Appium automation for reverse inventory, returns, remarketing and field-team workflows.</li><li>Developed API automation and validation using Rest Assured, Postman and Newman.</li><li>Integrated test execution and reporting into CI workflows and collaborated with cross-functional teams in Agile delivery.</li></ul></article>
+    </div></div>
+  </div></section>
+  <section id="projects"><div class="wrap">
+    <div class="section-head reveal"><div class="kicker">04 / SELECTED WORK</div><h2 class="section-title">Projects & contributions.</h2><p class="section-intro">A selection of product domains and quality engineering work from my experience.</p></div>
+    <div class="projects">
+      <article class="project reveal"><div class="project-top"><span class="project-type">Digital Harbor / Collaboration</span><span class="project-icon">01</span></div><h3>Yoodle — Enterprise Collaboration</h3><p>Quality validation for a collaboration platform spanning chat, meetings and productivity workflows.</p><ul><li>End-to-end testing across web, desktop and mobile.</li><li>Functional, API, backend, regression and exploratory coverage.</li><li>Defect triage and release sign-off collaboration.</li></ul><div class="chips"><span class="chip">Web</span><span class="chip">Mobile</span><span class="chip">API</span><span class="chip">E2E</span></div></article>
+      <article class="project reveal"><div class="project-top"><span class="project-type">Digital Harbor / Healthcare</span><span class="project-icon">02</span></div><h3>SET — Healthcare Workflow Platform</h3><p>API and database quality for healthcare case-management and workflow automation.</p><ul><li>Rest Assured framework covering 15+ APIs and 200+ automated tests.</li><li>Validated JSON responses, authentication and dynamic payloads.</li><li>API-to-database reconciliation using MySQL and MongoDB.</li></ul><div class="chips"><span class="chip">Rest Assured</span><span class="chip">Java</span><span class="chip">MySQL</span><span class="chip">MongoDB</span></div></article>
+      <article class="project reveal"><div class="project-top"><span class="project-type">Blubirch / Reverse supply chain</span><span class="project-icon">03</span></div><h3>RA–PaaS — Returns Automation</h3><p>Reverse supply-chain workflows for returned inventory and B2B/B2C liquidation.</p><ul><li>Automated 200+ UI end-to-end test cases with Selenium and Appium.</li><li>Reduced manual testing effort by 70%.</li><li>Validated API workflows with Postman and Newman.</li></ul><div class="chips"><span class="chip">Selenium</span><span class="chip">Appium</span><span class="chip">Postman</span><span class="chip">Newman</span></div></article>
+      <article class="project reveal"><div class="project-top"><span class="project-type">Blubirch / Remarketing</span><span class="project-icon">04</span></div><h3>Remarketing — B4Traders</h3><p>Testing and automation for a remarketing platform serving buyers with tracking, pricing guidance and business insights.</p><ul><li>Automated 80+ UI regression test cases using Selenium WebDriver.</li><li>Streamlined login, navigation and business workflows.</li><li>Validated data synchronization between two web applications.</li></ul><div class="chips"><span class="chip">Selenium</span><span class="chip">Regression</span><span class="chip">Data validation</span></div></article>
+      <article class="project reveal"><div class="project-top"><span class="project-type">Blubirch / Mobile</span><span class="project-icon">05</span></div><h3>FTA — Field Team Automation</h3><p>Mobile workflows for field-team tour planning and task execution.</p><ul><li>Automated 100+ mobile test scenarios using Appium.</li><li>Executed tests in parallel across Android devices.</li><li>Reduced mobile execution time by 60%.</li></ul><div class="chips"><span class="chip">Appium</span><span class="chip">Android</span><span class="chip">Parallel testing</span></div></article>
+    </div>
+  </div></section>
+  <section id="architecture"><div class="wrap">
+    <div class="section-head reveal"><div class="kicker">05 / ENGINEERING APPROACH</div><h2 class="section-title">From test design to actionable feedback.</h2><p class="section-intro">A simplified view of how a maintainable automation suite can fit into a delivery pipeline.</p></div>
+    <div class="architecture">
+      <div class="arch-copy reveal"><h3>Automation framework flow</h3><p>Reusable test layers separate test intent from implementation details. This makes suites easier to maintain, debug and extend as product workflows evolve.</p><p>My experience includes Selenium Java, Appium, Rest Assured, TestNG, Maven, Jenkins and reporting integrations. The diagram represents a typical framework structure, not a claim that every project used an identical architecture.</p><div class="chips"><span class="chip">Reusable components</span><span class="chip">Data-driven tests</span><span class="chip">CI execution</span><span class="chip">Reports</span></div></div>
+      <div class="arch-flow reveal" aria-label="Automation framework architecture"><div class="arch-box highlight">Test scenarios / TestNG / Cucumber</div><div class="arch-arrow">↓</div><div class="arch-box">Page Objects · API clients · Mobile screens</div><div class="arch-arrow">↓</div><div class="arch-box">Utilities · Waits · Test data · Config</div><div class="arch-arrow">↓</div><div class="arch-box highlight">Selenium · Appium · Rest Assured</div><div class="arch-arrow">↓</div><div class="arch-box">Maven · Jenkins · Allure / Extent Reports</div></div>
+    </div>
+  </div></section>
+  <section><div class="wrap">
+    <div class="section-head reveal"><div class="kicker">06 / EDUCATION</div><h2 class="section-title">Learning & foundations.</h2></div>
+    <div class="education-grid">
+      <article class="panel edu reveal"><div class="kicker">EDUCATION</div><h3>Bachelor of Engineering (B.E.)</h3><p>Basaveshwar Engineering College, Bagalkot (Autonomous), Karnataka · 2020</p></article>
+      <article class="panel edu reveal"><div class="kicker">TRAINING</div><h3>Manual, Core Java & Automation Testing</h3><p>QSpiders, Bangalore</p></article>
+    </div>
+  </div></section>
+  <section id="contact"><div class="wrap"><div class="contact-box reveal">
+    <div><div class="kicker">07 / CONTACT</div><h2>Let's make quality<br>part of the process.</h2><p>Open to conversations about QA engineering, automation and product quality.</p><p class="contact-email">patilchetan256@gmail.com</p></div>
+    <div class="contact-links"><a class="btn primary" href="mailto:patilchetan256@gmail.com">Email me ↗</a><a class="btn secondary" href="https://github.com/chetan13025" target="_blank" rel="noopener noreferrer">GitHub profile ↗</a><a class="btn secondary" href="Chetan_Patil_QA_Automation_Engineer_Resume.pdf" download>Resume ↓</a></div>
+  </div></div></section>
 </main>
-<footer><div class="wrap foot"><span>© <span id="year"></span> Chetan Patil · QA Automation Engineer</span><span>Built around measurable quality outcomes.</span></div></footer>
+<footer><div class="wrap footer-row"><span>© <span id="year"></span> Chetan Patil · QA Automation Engineer</span><a href="#home">Back to top ↑</a><span>Designed with a quality-first mindset.</span></div></footer>
 <script>
-document.getElementById('year').textContent=new Date().getFullYear();
-const menu=document.getElementById('menu'),links=document.getElementById('navlinks');
-menu.addEventListener('click',()=>links.classList.toggle('open'));
-links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>links.classList.remove('open')));
+  document.getElementById("year").textContent = new Date().getFullYear();
+  const menu = document.getElementById("menu");
+  const links = document.getElementById("navlinks");
+  menu.addEventListener("click", () => {
+    const open = links.classList.toggle("open");
+    menu.setAttribute("aria-expanded", String(open));
+  });
+  links.querySelectorAll("a").forEach(link => link.addEventListener("click", () => {
+    links.classList.remove("open");
+    menu.setAttribute("aria-expanded", "false");
+  }));
+  const revealItems = document.querySelectorAll(".reveal");
+  if ("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {threshold: 0.12});
+    revealItems.forEach(item => observer.observe(item));
+  } else {
+    revealItems.forEach(item => item.classList.add("visible"));
+  }
 </script>
-</body></html>
+</body>
+</html>
